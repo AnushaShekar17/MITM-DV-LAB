@@ -1,0 +1,33 @@
+In DATA VISUALIZATION lab we used in POWER BI desktop.Power BI is a powerful data visualization and business intelligence tool developed by Microsoft. It enables users to connect to a wide variety of data sources, perform data 
+transformations, and visualize data through interactive reports and dashboards.
+Key Features of Power BI:
+Data Connectivity:Connects to a variety of data sources, including Excel, SQL databases, cloud services (e.g., Azure, Salesforce), APIs, and more.
+Data Transformation:Use Power Query to clean, shape, and transform raw data for analysis.
+Data Modeling:Build relationships between datasets, define calculated fields, and use DAX (Data Analysis Expressions) for advanced computations.
+Interactive Visualizations:Create charts, graphs, tables, maps, and other visualizations that allow users to interact and drill down into the data.
+Dashboards and Reports:Develop real-time dashboards and paginated reports for effective data presentation.
+Collaboration and Sharing:Share dashboards and reports via the Power BI service and collaborate using integration with tools like Microsoft Teams.
+Mobile Access:View reports and dashboards on-the-go through the Power BI mobile app.
+AI Integration:Leverage AI features like natural language queries, anomaly detection, and machine learning integration.
+
+Components of Power BI:
+Power BI Desktop:A Windows application for creating reports and data models. It is the main development tool.
+Power BI Service:A cloud-based platform where users publish, share, and collaborate on reports.
+Power BI Mobile:Applications for Android, iOS, and Windows to access reports and dashboards remotely.
+Power BI Gateway:Facilitates secure data transfer between on-premises data sources and the Power BI service.
+Power BI Embedded:Allows developers to integrate Power BI reports into custom applications.
+
+Common Use Cases:
+Business Performance Tracking: Monitor key metrics using real-time dashboards.
+Sales Analysis: Analyze sales performance, trends, and forecasts.
+Financial Reporting: Create interactive financial reports and visualizations.
+Customer Insights: Analyze customer behavior and demographics.
+Operational Monitoring: Track logistics, supply chain, and operational efficiency.
+
+
+Benefits of Using Power BI:
+User-Friendly Interface: Easy for non-technical users to create visuals.
+Custom Visualizations: Includes a library of pre-built visuals and supports custom ones.
+Scalability: Suitable for small teams and large enterprises.
+Integration: Works seamlessly with Microsoft tools like Excel, Azure, and Dynamics 365.
+Cost-Effective: Offers a free version and competitive pricing for premium features.
