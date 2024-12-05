@@ -1,1 +1,133 @@
-LAB EXPERIMENT9:
+LAB EXPERIMENT9:Analysis of revenue in sales dataset 
+i) Create a choropleth map (fill the map) to spot the special trends to show the state revenue.
+ii) Create a line chart to show the revenue based on the month of the year. 
+iii) Create a bin of size 10 for the age measure to create a new dimension to show the revenue. 
+iv) Create a donut chart view to show the percentage of revenue per region by creating zero access in the calculated field.
+v) Create a butterfly chart by reversing the bar chart to compare female & male revenue based on product category. 
+vi) Create a calculated field to show the average revenue per state & display profitable & nonprofitable state.
+
+1. Introduction 
+-This program is designed to help you analyze and visualize sales revenue data for different states across India using Power BI. The primary objective is to uncover trends 
+and patterns within the data, such as high-performing states, monthly revenue trends, age-based revenue distribution, and region-based profitability. By building a variety of 
+visualizations, including choropleth maps, line charts, and bar charts, you’ll gain insights into factors driving sales performance. This analysis will allow you to explore 
+how demographic factors (like age and gender) and product categories influence revenue. 
+-The final output will be a comprehensive Power BI dashboard that enables interactive exploration of sales metrics, making it easier to communicate findings and support data
+driven decision-making. 
+2. Data Set Introduction 
+The dataset used in this analysis is a sales revenue dataset representing various Indian states. This dataset allows for in-depth analysis across various dimensions, helping identify which 
+states, age groups, product types, and regions contribute the most to overall revenue. 
+State: Lists different Indian states where sales transactions have been recorded, allowing for regional analysis. 
+Revenue: The total revenue (in INR) generated from each transaction, with values varying across states, time periods, and product categories. 
+Date: The date of each transaction, spanning various months in 2024. This field will support the analysis of monthly trends in revenue. 
+Age: The age of the customer for each transaction, grouped in working-age ranges (from 27 to 52). Binning this column will help identify revenue trends across age 
+groups. 
+Gender: Specifies the gender of the customer (Male or Female) for each transaction, allowing gender-based revenue comparisons. 
+Product Category: The type of product sold in each transaction, with categories like Electronics, Furniture, and Clothing. This enables analysis of revenue by product 
+type. 
+Region: The broader region of India where each transaction took place, divided into categories such as North, South, East, West, Central, and North-East.
+ 
+(i)Create a choropleth map (fill the map) to spot the special trends to show the state revenue.
+
+Choropleth Map is used to visualize revenue distribution by state. A choropleth map 
+is a type of map where regions (in this case, Indian states) are shaded or colored in 
+proportion to a specific data value 
+Insert the Filled Map: 
+From the Visualizations pane, select the Filled Map visual. 
+Drag the State field to the Location field, setting up the map by each state. 
+Adding Revenue Data: 
+Drag the Revenue field to the Legend field. This controls the shading of each state based on revenue 
+
+ii) Create a line chart to show the revenue based on the month of the year.  Line Chart for Monthly Revenue Trend 
+Insert Line Chart: 
+Choose the Line Chart visual. 
+Add Date to the X Axis field, ensuring it's grouped by Month. 
+Drag Revenue into the Y Axis field. 
+Format Line Chart: 
+Go to the Format pane, adjust line thickness and color for better visualization. 
+Add Data Labels if you want values displayed directly on the line. 
+
+iii) Create a bin of size 10 for the age measure to create a new dimension to show the revenue. 
+Binning is a technique used to group continuous data into discrete ranges or categories, making 
+it easier to analyze and visualize patterns in the data. In Power BI, binning is often applied to 
+numerical fields like Age, Revenue, or Income to transform them into manageable intervals (or "bins"). 
+For example, instead of analyzing individual ages in a dataset, you can create age bins such as 
+20-29, 30-39, and 40-49. This allows you to quickly see how different age groups contribute 
+to total revenue, for instance, and spot trends that may not be obvious from looking at raw data. 
+Bin Revenue Data by Age (Bin Size = 10) 
+1. Create Age Bins: 
+Right CLick on Age->New Group->Set Bin size=10. 
+Ensure Group type is Bin. 
+2. Display Revenue by Age Bins: 
+Use a Bar chart(Clustered Column Chart) or other visuals to compare revenue 
+across age groups. 
+Place "Age Bins" in the X-Axis and Revenue in the Y-Axis. 
+
+iv)  Create a donut chart view to show the percentage of revenue per region 
+by creating zero access in the calculated field. 
+Donut Charts 
+A Donut Chart is a circular chart similar to a pie chart but with a hole in the center, creating a "donut" shape. It is used to show the proportional distribution of a whole by 
+breaking it down into categories. Each segment of the donut represents a percentage of the total, allowing for easy comparison of parts to the whole.
+
+Donut charts are ideal for visualizing percentages or parts of a dataset (e.g., revenue by region) because they give an immediate sense of the relative size of each category. The 
+empty center can also be used to display additional information, such as total values or key insights, making donut charts a compact and visually appealing option for comparing contributions across categories. 
+Step 1: Create a Calculated Field for Revenue Percentage 
+1. Define the Measure for Revenue Percentage: 
+Right click on Revenue field 
+In the formula bar, enter the following formula to calculate the percentage of total revenue for each region. 
+This formula calculates the revenue percentage for each region by dividing each region's revenue by the total revenue across all regions. 
+Revenue Percentage = DIVIDE(SUM(Sheet1[Revenue]), CALCULATE(SUM(Sheet1[Revenue]), ALL(Sheet1))) 
+2. Format as Percentage: 
+After creating the measure, go to the Measure Tools tab and set the format to Percentage so it will display as a percentage in the chart. 
+Step 2: Create the Donut Chart 
+1. Insert a Donut Chart: 
+Go to the Visualizations pane and select the Donut Chart icon. 
+Drag the Donut Chart visual onto your report canvas. 
+2. Add Region to the Legend: 
+Drag the Region field into the Legend field well of the donut chart. This will 
+separate each section of the donut chart by region. 
+3. Add Revenue Percentage to Values: 
+Drag the Revenue Percentage measure you created into the Values field well. 
+This will make the donut chart display each region’s revenue as a percentage of the total.
+
+v) Create a butterfly chart by reversing the bar chart to compare female & male revenue based on product category. 
+A Butterfly Chart (also called a Tornado or Divergent Bar Chart) is used to compare two categories side-by-side across a common variable, often to show differences between two 
+groups. The chart consists of two bar charts placed back-to-back, resembling a butterfly's wings, which gives the chart its name. 
+Butterfly charts are popular for gender-based comparisons (like revenue by product category for male vs. female customers), age-group comparisons, or regional comparisons. Each side of 
+the chart displays one of the two categories, helping visualize differences or trends between them across different variables or dimensions. 
+The below measure calculates the total revenue for rows where the Gender is Male and  Female. 
+Right Click on Revenue Field in the Data Pane and Create a Measure for Male Revenue: 
+Male Revenue = CALCULATE(SUM(Sheet1[Revenue]), Sheet1[Gender] = "Male") 
+Similarly, Create a Measure for Female Revenue: 
+Female Revenue = CALCULATE(SUM(Sheet1[Revenue]), Sheet1[Gender] = "Female") 
+Step 2: Add the Measures to a Bar Chart for Comparison 
+1. Insert a Clustered Bar Chart: 
+In the Visualizations pane, select the Clustered Bar Chart (or Clustered Column Chart for a vertical layout) and add it to your report canvas. 
+2. Add Product Category to the Axis: 
+Drag the Product Category field into the X-Axis field well. This will be the common category along which you’ll compare Male and Female Revenue. 
+3. Add Male and Female Revenue Measures to the Values: 
+Drag the Male Revenue measure into the Y-Axis field well. 
+Drag the Female Revenue measure into the Y-Axis field well as well. 
+The chart will now display side-by-side bars for Male and Female Revenue for each product category.
+
+vi) Create a calculated field to show the average revenue per state & display profitable & non
+profitable state. 
+To create a calculated field that shows the average revenue per state and categorize each state as profitable or non-profitable, we shall create two measures:  
+1. one to calculate the average revenue per state and  
+2. Another, to categorize each state as profitable or non-profitable based on a defined threshold. 
+
+Step 1: Calculate Average Revenue Per State 
+1. Go to the Data/Fields Pane: 
+ In Power BI, locate the table that contains your Revenue and State columns. 
+2. Create a New Measure for Average Revenue Per State: 
+Right Click and select New Measure. 
+In the formula bar, type the following DAX formula to calculate the average revenue per state and press Enter key. 
+Average Revenue Per State = AVERAGE('Sheet1'[Revenue]) 
+3. Display Average Revenue Per State on a Card 
+ Go to the Report View. 
+ From the Visualizations pane, select the Card visual. 
+Drag the Average Revenue Per State measure to the Fields section of the Card visual. 
+Format the Card to display the revenue neatly. 
+4. Create a Calculated Field to Identify Profitable and Non-Profitable States 
+In the Home Tab, Select → New Column.
+2Enter the following formula: 
+Profitability = IF(Sheet1[Revenue] < 600000, "Non-Profitable", "Profitable")
