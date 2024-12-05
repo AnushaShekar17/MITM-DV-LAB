@@ -1,4 +1,5 @@
 LAB EXPERIMENT9:Analysis of revenue in sales dataset 
+
 i) Create a choropleth map (fill the map) to spot the special trends to show the state revenue.
 ii) Create a line chart to show the revenue based on the month of the year. 
 iii) Create a bin of size 10 for the age measure to create a new dimension to show the revenue. 
@@ -13,6 +14,7 @@ visualizations, including choropleth maps, line charts, and bar charts, you’ll
 how demographic factors (like age and gender) and product categories influence revenue. 
 -The final output will be a comprehensive Power BI dashboard that enables interactive exploration of sales metrics, making it easier to communicate findings and support data
 driven decision-making. 
+
 2. Data Set Introduction 
 The dataset used in this analysis is a sales revenue dataset representing various Indian states. This dataset allows for in-depth analysis across various dimensions, helping identify which 
 states, age groups, product types, and regions contribute the most to overall revenue. 
@@ -25,9 +27,9 @@ Gender: Specifies the gender of the customer (Male or Female) for each transacti
 Product Category: The type of product sold in each transaction, with categories like Electronics, Furniture, and Clothing. This enables analysis of revenue by product 
 type. 
 Region: The broader region of India where each transaction took place, divided into categories such as North, South, East, West, Central, and North-East.
- 
-(i)Create a choropleth map (fill the map) to spot the special trends to show the state revenue.
 
+
+(i)Create a choropleth map (fill the map) to spot the special trends to show the state revenue.
 Choropleth Map is used to visualize revenue distribution by state. A choropleth map 
 is a type of map where regions (in this case, Indian states) are shaded or colored in 
 proportion to a specific data value 
@@ -67,7 +69,6 @@ by creating zero access in the calculated field.
 Donut Charts 
 A Donut Chart is a circular chart similar to a pie chart but with a hole in the center, creating a "donut" shape. It is used to show the proportional distribution of a whole by 
 breaking it down into categories. Each segment of the donut represents a percentage of the total, allowing for easy comparison of parts to the whole.
-
 Donut charts are ideal for visualizing percentages or parts of a dataset (e.g., revenue by region) because they give an immediate sense of the relative size of each category. The 
 empty center can also be used to display additional information, such as total values or key insights, making donut charts a compact and visually appealing option for comparing contributions across categories. 
 Step 1: Create a Calculated Field for Revenue Percentage 
@@ -78,6 +79,7 @@ This formula calculates the revenue percentage for each region by dividing each 
 Revenue Percentage = DIVIDE(SUM(Sheet1[Revenue]), CALCULATE(SUM(Sheet1[Revenue]), ALL(Sheet1))) 
 2. Format as Percentage: 
 After creating the measure, go to the Measure Tools tab and set the format to Percentage so it will display as a percentage in the chart. 
+
 Step 2: Create the Donut Chart 
 1. Insert a Donut Chart: 
 Go to the Visualizations pane and select the Donut Chart icon. 
@@ -109,8 +111,7 @@ Drag the Male Revenue measure into the Y-Axis field well.
 Drag the Female Revenue measure into the Y-Axis field well as well. 
 The chart will now display side-by-side bars for Male and Female Revenue for each product category.
 
-vi) Create a calculated field to show the average revenue per state & display profitable & non
-profitable state. 
+vi) Create a calculated field to show the average revenue per state & display profitable & nonprofitable state. 
 To create a calculated field that shows the average revenue per state and categorize each state as profitable or non-profitable, we shall create two measures:  
 1. one to calculate the average revenue per state and  
 2. Another, to categorize each state as profitable or non-profitable based on a defined threshold. 
