@@ -1,13 +1,13 @@
 LAB EXPERIMENT9:Analysis of revenue in sales dataset 
 
-i) Create a choropleth map (fill the map) to spot the special trends to show the state revenue.
-ii) Create a line chart to show the revenue based on the month of the year. 
-iii) Create a bin of size 10 for the age measure to create a new dimension to show the revenue. 
-iv) Create a donut chart view to show the percentage of revenue per region by creating zero access in the calculated field.
-v) Create a butterfly chart by reversing the bar chart to compare female & male revenue based on product category. 
-vi) Create a calculated field to show the average revenue per state & display profitable & nonprofitable state.
+i)Create a choropleth map(fill the map) to spot the special trends to show the state revenue.
+ii)Create a line chart to show the revenue based on the month of the year. 
+iii)Create a bin of size 10 for the age measure to create a new dimension to show the revenue. 
+iv)Create a donut chart view to show the percentage of revenue per region by creating zero access in the calculated field.
+v)Create a butterfly chart by reversing the bar chart to compare female & male revenue based on product category. 
+vi)Create a calculated field to show the average revenue per state & display profitable & nonprofitable state.
 
-1. Introduction 
+1.Introduction 
 -This program is designed to help you analyze and visualize sales revenue data for different states across India using Power BI. The primary objective is to uncover trends 
 and patterns within the data, such as high-performing states, monthly revenue trends, age-based revenue distribution, and region-based profitability. By building a variety of 
 visualizations, including choropleth maps, line charts, and bar charts, you’ll gain insights into factors driving sales performance. This analysis will allow you to explore 
@@ -15,7 +15,7 @@ how demographic factors (like age and gender) and product categories influence r
 -The final output will be a comprehensive Power BI dashboard that enables interactive exploration of sales metrics, making it easier to communicate findings and support data
 driven decision-making. 
 
-2. Data Set Introduction 
+2.Data Set Introduction 
 The dataset used in this analysis is a sales revenue dataset representing various Indian states. This dataset allows for in-depth analysis across various dimensions, helping identify which 
 states, age groups, product types, and regions contribute the most to overall revenue. 
 State: Lists different Indian states where sales transactions have been recorded, allowing for regional analysis. 
@@ -39,7 +39,7 @@ Drag the State field to the Location field, setting up the map by each state.
 Adding Revenue Data: 
 Drag the Revenue field to the Legend field. This controls the shading of each state based on revenue 
 
-ii) Create a line chart to show the revenue based on the month of the year.  Line Chart for Monthly Revenue Trend 
+ii) Create a line chart to show the revenue based on the month of the year. Line Chart for Monthly Revenue Trend 
 Insert Line Chart: 
 Choose the Line Chart visual. 
 Add Date to the X Axis field, ensuring it's grouped by Month. 
