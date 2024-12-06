@@ -1,1 +1,31 @@
-LAB EXPERIMENT:10
+LAB EXPERIMENT:10  Analysis of GDP dataset 
+i) Visualize the countries data given in the dataset with respect to latitude and longitude along with country name using symbol maps. 
+ii) Create a bar graph to compare GDP of Beigium between 2006-2026. 
+iii) Using pie chart, visualize the GDP of India, Nepal, Romania, South Asia, Singapore by the year 2010. 
+iv) Visualize the countries Bhutan & Costa Rica competing in terms of GDP. 
+v) Create a scatter plot or circle views of GDP of Mexico, Algeria, Fiji, Estonia from 2004 to 2006. 
+
+Introduction 
+This program is designed to guide users in analyzing GDP data using Microsoft Power BI, a versatile business intelligence platform. It focuses on enabling users to explore and visualize GDP trends across 
+different countries and years, offering valuable insights into economic patterns and comparisons between nations. 
+The program uses a comprehensive dataset containing details such as country names, geographical coordinates, GDP values, and regional classifications. Students will learn to create various 
+visualizations, including symbol maps, bar charts, pie charts, scatter plots, and interactive dashboards, to uncover meaningful insights and trends. 
+
+Objectives of the Program 
+Visualizing geospatial data using symbol maps. 
+Comparing GDP trends over time with bar charts. 
+Representing proportions with pie charts. 
+Understanding relationships through scatter plots. 
+Crafting interactive dashboards for dynamic analysis.
+
+Dataset Description 
+The dataset provided in this program contains key information about GDP values for different 
+countries across several years. It includes columns for. 
+Country Name: The name of the country. 
+Latitude: The geographical latitude of the country for geolocation purposes. 
+Longitude: The geographical longitude of the country for geolocation purposes. 
+Year: The year of the recorded GDP data. 
+GDP (in USD Billion): The GDP value of the country, measured in billions of USD. 
+Region: The geographical region or continent the country belongs to (e.g., South Asia, Europe). 
+The data is structured to allow for multiple types of visualizations and comparisons, especially focusing 
+on countries like Belgium, India, Nepal, Mexico, and Costa Rica, among others. 
