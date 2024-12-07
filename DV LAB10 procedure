@@ -29,3 +29,181 @@ GDP (in USD Billion): The GDP value of the country, measured in billions of USD.
 Region: The geographical region or continent the country belongs to (e.g., South Asia, Europe). 
 The data is structured to allow for multiple types of visualizations and comparisons, especially focusing 
 on countries like Belgium, India, Nepal, Mexico, and Costa Rica, among others. 
+
+
+i) Visualize the countries data given in the dataset with respect to latitude 
+and longitude along with country name using symbol maps. 
+
+Symbol Maps 
+A Symbol Map is a powerful geospatial visualization tool used to represent data points geographically on a map. It displays data in the form of symbols (such as circles, squares, or custom icons) that are 
+placed over specific geographical locations defined by latitude and longitude coordinates. In business intelligence tools like Power BI, Symbol Maps are used to visualize spatial data, showing patterns, 
+trends, and comparisons across different locations. 
+
+Creating a Symbol Map in Power BI for GDP Visualization 
+To visualize the geographical distribution of GDP across countries using a Symbol Map in Power BI, 
+follow these steps. 
+1. Open Power BI and Import the GDP Dataset 
+Launch Power BI Desktop on your system. 
+Import Data: To start, you need to load the GDP dataset into Power BI. If your data is stored in an Excel file, a CSV file, or any other supported data format, you can easily import it by 
+selecting the "Get Data" option from the Home ribbon and choosing the appropriate data source. 
+Example: If you’re using Excel, you would choose Excel from the available options, navigate to the 
+file, and select the sheet containing your GDP data. 
+Once the data is loaded, you should see it in the Fields Pane on the right side of Power BI. 
+2. Add a Map Visualization 
+After importing the dataset, go to the Visualizations Pane on the right side of Power BI. Look 
+for the Map visualization icon. This will typically appear as a globe symbol. 
+Click on the Map icon to add a blank map to the report canvas. 
+3. Drag Latitude and Longitude into the Map Visualization 
+Find the Latitude and Longitude Fields in the Fields Pane on the right (from the dataset you imported). 
+Drag the Latitude field from the Fields Pane and drop it into the Latitude section of the Map visualization in the Visualizations pane. 
+Drag the Longitude field from the Fields Pane and drop it into the Longitude section of the Map visualization. 
+These two fields define the geographic location of each country on the map. 
+Power BI will automatically plot the data points at the correct locations using the latitude and longitude values for each country. 
+4. Set Country Name as the Tooltip 
+ Tooltips allow you to display additional information when you hover over a symbol on the map. 
+Drag the Country Name field from your dataset and drop it into the Tooltips section of the Map visualization (within the Visualizations pane). 
+Once this is done, whenever you hover over a symbol (representing a country), Power BI will display the name of the country as part of the tooltip information. 
+This helps users quickly identify which country each symbol represents on the map. 
+5. Add GDP (in USD) to the Size Field Well 
+GDP Field: Now, to scale the symbols based on GDP, you need to use the GDP (in USD) field from your dataset. 
+Drag the GDP (in USD) field and drop it into the Bubble Size (Select Average of GDP) section in the Visualizations pane. 
+The Size field determines the size of the symbols on the map based on the value associated with that field (in this case, the GDP value). 
+Power BI will automatically scale the size of each symbol in proportion to the GDP of each country. Countries with a higher GDP will have larger symbols, and those with a lower GDP will have smaller symbols. 
+This allows you to visually compare the relative GDP of countries: bigger circles represent countries with higher GDP, and smaller circles represent countries with lower GDP. 
+
+ii) Create a bar graph to compare GDP of Beigium between 2006-2026. 
+What is a Bar Graph? 
+A Bar Graph (also known as a Bar Chart) is a chart that uses rectangular bars to represent data. The length or height of each bar corresponds to the value of the data it represents. It is typically used to 
+compare values across categories. Bar graphs are ideal for showing trends over time, comparisons between different groups, or frequency distributions. 
+Bar Graph to Compare Belgium’s GDP (2006-2026) 
+A Bar Graph is a powerful visualization tool used to compare different categories or values across discrete intervals. In this case, we are using a bar graph to compare Belgium’s GDP between the years 
+2006 and 2026. The graph will display bars, each representing the GDP for a specific year, allowing you to visually compare how Belgium’s economy changes over time. 
+Steps to Create a Bar Graph in Power BI 
+1. Insert a Bar Chart Visualization 
+ Open Power BI Desktop and go to the Visualizations Pane on the right side of the screen. 
+ Click on the Bar Chart icon. You have several options (e.g., Clustered Bar, Stacked Bar), but for comparing GDP over time, Clustered Bar Chart is usually the most effective choice. 
+Clustered Bar Chart will place each year’s GDP side by side, making it easy to compare the values. 
+Once you click on the Bar Chart icon, Power BI will add a blank bar chart to your report canvas. 
+2. Filter the Dataset to Display Only Data for Belgium 
+ Now, you need to focus on data related to Belgium. 
+ From the Fields Pane on the right, locate the Country Name field from your dataset. 
+ Drag Country Name and drop it into the Filters pane (on the right side). 
+ In the filter pane, choose Belgium so that the dataset is filtered to show only Belgium’s data. 
+This will ensure that the bar graph displays GDP data for Belgium only, from 2006 to 2026, rather than data for all countries. 
+3. Drag 'Year' to the X-Axis 
+In the Fields Pane, locate the Year field. 
+Drag Year and drop it into the X-Axis section of the bar chart visualization (in the Visualizations pane). 
+The X-axis (horizontal axis) will now represent the years (2006 to 2026). 
+Each bar will correspond to a different year. 
+4. Drag 'GDP (in USD)' to the Y-Axis 
+  Next, locate the GDP (in USD) field in the Fields Pane. 
+Drag GDP (in USD) and drop it into the Values section of the bar chart visualization. 
+The Y-axis (vertical axis) will now represent the GDP values in billions of USD. 
+Each bar’s height will correspond to the GDP value for that specific year. 
+
+iii) Using pie chart, visualize the GDP of India, Nepal, Romania, South Asia, Singapore by the year 2010. 
+Pie Chart to Visualize GDP of Selected Countries in 2010 
+A Pie Chart is a circular statistical chart divided into slices, where each slice represents a proportion of the whole. In this case, we will create a pie chart in Power BI to visualize the GDP contributions 
+of India, Nepal, Romania, South Asia, and Singapore for the year 2010. 
+Steps to Create the Pie Chart in Power BI 
+1. Insert a Pie Chart Visualization 
+ In the Visualizations Pane on the right side, locate the Pie Chart icon (a circular chart symbol). 
+ Click on the Pie Chart icon to insert a blank pie chart into your report canvas. 
+2. Filter the Dataset to Show Data for 2010 
+To ensure the chart only includes GDP data for the year 2010 and the selected countries: 
+1. Locate the Year field in the Fields Pane. 
+2. Drag the Year field to the Filters Pane on the right side. 
+3. In the filter options, select 2010 to restrict the data to this year only. 
+Next, filter the dataset to include only the countries of interest (India, Nepal, Romania, South Asia, and Singapore): 
+1. Drag the Country Name field to the Filters Pane. 
+2. In the filter options, check the boxes for India, Nepal, Romania, South Asia, and Singapore. 
+ This will ensure that the pie chart only displays data for these specific countries and regions. 
+3. Set 'Country Name' as the Legend 
+ In the Fields Pane, locate the Country Name field. 
+ Drag Country Name and drop it into the Legend section in the Visualizations Pane. 
+ The Legend is used to differentiate the slices of the pie chart. Each slice will represent a specific country or region, with its name displayed in the legend on the chart. 
+4. Set 'GDP (in USD)' as the Values 
+ Locate the GDP (in USD) field in the Fields Pane. 
+ Drag GDP (in USD) and drop it into the Values section in the Visualizations Pane. 
+ The Values determine the size of each slice in the pie chart. The GDP values for each country/region will dictate the proportion of the pie chart that each slice occupies. 
+
+iv) Visualize the countries Bhutan & Costa Rica competing in terms of GDP. 
+Visualization of Bhutan & Costa Rica Competing in Terms of GDP To visually compare the GDP trends of Bhutan and Costa Rica over the years, a Line Chart is an ideal 
+choice. Line charts effectively illustrate changes over time, allowing us to observe and compare patterns for both countries in a single graph. 
+Steps to Create the Line Chart in Power BI 
+1. Insert a Line Chart Visualization 
+1. In the Visualizations Pane on the right, locate the Line Chart icon (a chart with a line graph symbol). 
+2. Click on the Line Chart icon to add a blank line chart to your report canvas. 
+
+2. Filter the Dataset to Include Only Bhutan and Costa Rica To ensure the chart only shows data for Bhutan and Costa Rica: 
+1. Locate the Country Name field in the Fields Pane. 
+2. Drag the Country Name field into the Filters Pane. 
+3. In the filter options, select only Bhutan and Costa Rica. 
+ This step excludes data for other countries in the dataset. 
+
+3. Add 'Year' to the X-Axis 
+1. Locate the Year field in the Fields Pane. 
+2. Drag the Year field into the X-Axis section of the Visualizations Pane. 
+ The X-axis will now display the timeline for the GDP data. 
+
+4. Add 'GDP (in USD)' to the Y-Axis 
+1. Locate the GDP (in USD) field in the Fields Pane. 
+2. Drag the GDP (in USD) field into the Y-Axis section of the Visualizations Pane. 
+The Y-axis will display the GDP values, enabling a comparison of GDP magnitudes over time. 
+
+5. Add the Country Name to the Legend 
+Drag the Country Name field into the Legend section of the Visualizations Pane. 
+ This will create separate lines for Bhutan and Costa Rica based on their respective GDP data. 
+ Now, each country will have its own line on the chart. 
+
+v) Create a scatter plot or circle views of GDP of Mexico, Algeria, Fiji, Estonia 
+from 2004 to 2006. 
+Scatter Plot for GDP of Mexico, Algeria, Fiji, and Estonia (2004-2006) 
+What is a Scatter Plot? 
+A scatter plot is a visualization that uses Cartesian coordinates to display values for two variables for 
+a set of data. In this context: 
+ X-Axis: Year (2004–2006) 
+ Y-Axis: GDP (in USD Billion) 
+ Circle Size: A third variable representing GDP magnitude can also be incorporated to 
+enhance the visual impact. 
+Steps to Create the Scatter Plot in Power BI 
+1. Insert a Scatter Plot Visualization 
+1. In the Visualizations Pane on the right, click on the Scatter Chart icon (a symbol with circular markers).
+2. Drag the blank scatter chart to your canvas. 
+
+2. Filter the Dataset for Relevant Data 
+1. Locate the Country Name field in the Fields Pane. 
+2. Drag the Country Name field into the Filters Pane.
+
+3. In the filter options: 
+ Select only Mexico, Algeria, Fiji, and Estonia. 
+4. Drag the Year field into the Filters Pane. 
+5. Filter the data to include only 2004 to 2006. 
+3. Assign Data to Axes 
+1. X-Axis: 
+2. Y-Axis: 
+ Drag the Year field into the X-Axis section in the Visualizations Pane. 
+ The X-axis will represent the timeline. 
+ Drag the GDP (in USD Billion) field into the Y-Axis section. 
+ The Y-axis will display the GDP values for each country. 
+4. Add Data for Circle Size 
+1. Drag the GDP (in USD Billion) field into the Size section in the Visualizations Pane. 
+2. This will scale the circle size proportionally to the GDP value, making larger GDPs more 
+visually prominent. 
+5. Add Country Name to the Legend 
+1. Drag the Country Name field into the Legend section. 
+ This step will assign a unique color to each country, allowing differentiation 
+between Mexico, Algeria, Fiji, and Estonia. 
+Note:  If the scatter plot circles for 2004 and 2006 are displayed partially, 
+ Open the Format Pane by selecting the scatter plot visualization. 
+ Expand the X-Axis settings. 
+ Check the following: 
+Type: Ensure it is set to Categorical instead of Continuous. 
+6. Customize the Scatter Plot 
+1. Title: Add a descriptive title, such as "GDP Comparison (2004–2006): Mexico, Algeria, Fiji, and Estonia". 
+2. Axis Titles: 
+ Label the X-axis as Year. 
+ Label the Y-axis as GDP (in USD Billion). 
+3. Markers: 
+ Increase marker size for better visibility. 
+ Enable tooltips to display details (e.g., country name, year, GDP) when hovering over circles.
