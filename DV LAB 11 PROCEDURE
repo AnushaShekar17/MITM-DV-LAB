@@ -1,1 +1,246 @@
-
+Lab 11. Analysis of HR dataset  
+i) Create KPI to show employee count, attrition count, attrition rate, attrition count, active employees, 
+and average age. 
+ii) Create a Lollipop Chart to show the attrition rate based on gender category. 
+iii) Create a pie chart to show the attrition percentage based on Department Category. 
+iv) Create a bar chart to display the number of employees by Age group. 
+v) Create a highlight table to show the Job Satisfaction Rating for each job role based on employee 
+count  
+vi) Create a horizontal bar chart to show the attrition count for each Education field Education field 
+wise attrition-drag education field to rows, sum attrition count to column. 
+vii) Create multiple donut chart to show the Attrition Rate by Gender for different Age group 
+Introduction 
+This program is designed to analyze and visualize an HR dataset. The primary objective is to extract 
+meaningful insights about employees and their attributes such as attrition rates, demographics, 
+education fields, job satisfaction, and more.  
+By leveraging interactive visuals like KPIs, bar charts, pie charts, and highlight tables, this program 
+enables HR professionals to make data-driven decisions regarding workforce management and 
+retention strategies. 
+The analysis covers key performance indicators (KPIs), gender-based attrition trends, department-wise 
+attrition percentages, and job satisfaction levels across roles. Also, it provides age-group 
+categorizations and attrition analysis for education fields, helping organizations understand workforce 
+trends comprehensively. 
+Introduction to the Dataset 
+The dataset represents a HR database containing details about employees, their roles, demographics, 
+and employment status. It is structured to capture critical information about employees to facilitate 
+workforce analysis and meet the requirements of the visualizations specified. 
+Description of the Dataset 
+ EmployeeID: A unique identifier for each employee (1 to 50). 
+ Name: Employee names, reflecting a mix of Indian male and female names for diversity. 
+ Age: The age of employees, ranging from 25 to 50 years. 
+ Gender: The gender of employees, categorized as either Male or Female. 
+ Department: The department in which employees work, including IT, HR, Sales, Finance, and 
+Operations. 
+ EducationField: The educational background of employees, such as Computer Science, Human 
+Resources, Marketing, etc. 
+ JobRole: The specific role of the employee, e.g., Software Engineer, HR Manager, Data Analyst, etc. 
+ JobSatisfaction: A rating (1 to 5) representing job satisfaction, where 1 is the lowest and 5 is the 
+highest. 
+ Attrition: Indicates whether the employee has left the organization (Yes) or is still active (No). 
+ AgeGroup: Categorized age ranges (e.g., 25-30, 30-35) for grouping employees by age. 
+ 
+Objectives of the Program 
+1. Calculate key workforce metrics like total employee count, attrition count, attrition rate, and 
+average age. 
+2. Analyze attrition trends by gender, department, age group, and education field. 
+3. Display job satisfaction levels across job roles to identify engagement patterns. 
+4. Segment employees by demographics such as age groups and gender for deeper insights. 
+5. Create interactive visualizations for dynamic data exploration and filtering. 
+i) 
+Create KPI to show employee count, attrition count, attrition rate, attrition 
+count, active employees, and average age.  
+KPI (Key Performance Indicator) is a measurable value that demonstrates how effectively an individual, 
+team, or organization is achieving a business objective. KPIs are used to evaluate the success of an organization 
+or a specific activity in which it engages. 
+Visually distinct KPIs displaying- 
+ Total Employee Count 
+ Attrition Count 
+ Attrition Rate 
+ Active Employees 
+ Average Age 
+KPI Dashboard 
+(i) Total Employee Count 
+1. Select the Card Visual in the Visualizations pane. 
+2. In the Fields pane: 
+ Drag the EmployeeID to  the Fields section. 
+ Change the aggregation to Count (click on the dropdown arrow next to 
+EmployeeID in the Values field). 
+3. Rename the card title to Total Employee Count: 
+ Go to Format Visual ->Title, enable it, and type the title Total Employee Count. 
+(ii) Attrition Count (Attrition is when employees leave an organization) 
+1. click New Measure. 
+2. Enter the following DAX formula: 
+DAX 
+Attrition_Count = COUNTX(FILTER('HR', 'HR'[Attrition] = "Yes"), 'HR'[EmployeeID]) 
+a. FILTER('HR', 'HR'[Attrition] = "Yes") 
+ What it does: 
+ The FILTER function creates a new table by applying a condition. 
+ In this case, it filters the HR table to include only rows where the Attrition column equals 
+"Yes". 
+ Result: 
+ A smaller virtual table containing only employees who have left the organization. 
+b. COUNTX(FILTER, 'HR'[EmployeeID]) 
+ The COUNTX function iterates over a table (in this case, the filtered table created by FILTER) 
+and counts the non-blank values in the specified column (EmployeeID). 
+ Each employee has a unique EmployeeID. By counting these IDs in the filtered table, we get 
+the total number of employees who have left. 
+3. Add a new Card Visual to the canvas. 
+4. Drag the Attrition Count measure into the card. 
+5. Rename the card title to Attrition Count. 
+(iii) Attrition Rate 
+1. click New Measure. 
+Enter the following DAX formula:   
+This calculates the attrition rate as a percentage of total employees. 
+Attrition_Rate = DIVIDE([Attrition_Count],COUNT('HR'[EmployeeID]), 0) * 100 
+2. Press Enter. 
+3. Add a Card Visual to the canvas. 
+4. Drag the Attrition Rate measure into the card.  Rename the card title to Attrition Rate. 
+ The formula calculates the Attrition Rate as a percentage, showing the proportion of employees who 
+have left the organization compared to the total number of employees. 
+ if the denominator (COUNT('HR'[EmployeeID])) is zero, it returns the third argument (in this case, 0), 
+avoiding runtime errors. 
+ Multiplies the result of the division by 100 to convert it into a percentage. 
+(iv) Active Employees 
+1. click New Measure. 
+2. Enter the following DAX formula: 
+Active_Employees = COUNTX(FILTER('HR', 'HR'[Attrition] = "No"), 'HR'[EmployeeID]) 
+3. Press Enter. 
+4. Add a Card Visual to the canvas. 
+5. Drag the Active Employees measure into the card. 
+6. Rename the card title to Active Employees. 
+(v) Average Age 
+1. Add a new Card Visual to the canvas. 
+2. Drag the Age column into the card. 
+3. Power BI will display the default aggregation as Sum. 
+4. Change the aggregation: Click on the dropdown arrow next to Age in the Values field and 
+select Average. 
+5. Rename the card title to Average Age. 
+ii) 
+Create a Lollipop Chart to show the attrition rate based on gender 
+category. 
+Lollipop Chart 
+A Lollipop Chart is a variation of a bar chart that uses a line (or stick) with a circular marker (the 
+lollipop) to represent data points. It’s often used to emphasize individual data points in a clean, visually 
+appealing way. It’s similar to a bar chart but offers better clarity, especially when you want to 
+emphasize data values without crowding the visualization with long bars. 
+In a Lollipop Chart, the line represents the magnitude of a metric (such as attrition rate), and the 
+marker at the end of the line represents the actual value. This visualization is particularly effective for 
+showing comparisons across different categories. 
+Steps to Create a Lollipop Chart to Show Attrition Rate by Gender 
+Since Lollipop Chart is not available on Desktop version of powerBI, we shall use Line Chart to create 
+the Lollipop Chart.  
+1. Select the Line chart: 
+2. Drop Gender to X-Axis well and Attrition Count to Y-Axis well. 
+3. Go to Markers-> Enable show for all categories-> Change the shape to Bullet-> Increase its 
+size to 20 px. Now the size of the data point would be increased indicating the head of the 
+Lollipop for the Lollipop chart. 
+4. Now to connect a line from X-Axis to the data point (Indicating the Lollipop stick), 
+ Go to Error Bars-> Make sure the Options Enabled to ON 
+ Drop Attrition_Count to Upper bound well. 
+ Create a new measure LB and set it to 0 i.e LB=0 and add this to Lower bound well. 
+ Under the same Options Enabled-> Bar(ON)->Width is 10 PX, indicating the stick of the 
+Lollipop for the chart. 
+5. To disconnect the lines joining the data points: 
+Go to Lines-> Line-> Width-> set to 0 PX. 
+iii) Create a pie chart to show the attrition percentage based on Department 
+Category. 
+Create a Pie Chart to Show Attrition Percentage by Department 
+A Pie Chart is an effective way to visualize proportional data. In this case, we’ll use it to display the 
+attrition percentage across different departments, helping to identify which department contributes the 
+most to employee attrition. 
+Step-by-Step Guide to Create the Pie Chart 
+Step 1: Add a Pie Chart 
+1. Select the Pie Chart Visual: 
+ Click on the Pie Chart icon. 
+Step 2: Set Data Fields 
+1. Add Department to the Legend: 
+ Drag the Department column into the Legend field well of the pie chart. 
+ This will create a separate slice in the pie chart for each department in the 
+dataset. 
+2. Drag the Attrition_Count measure into the Values field of the pie chart. 
+iv)  Create a bar chart to display the number of employees by Age group. 
+1. Add a Bar Chart: 
+ Select the Clustered Bar Chart visual. 
+2. Set Data Fields: 
+ Add AgeGroup to the X-Axis. 
+ Add EmployeeID to the Y-Axis field and set aggregation to Count. 
+3. Format Chart: 
+Add Data Labels to display the employee count: Data Labels: ON 
+v) Create a highlight table to show the Job Satisfaction Rating for each job role based 
+on employee count. 
+A highlight table in Power BI is a variation of a matrix or table visualization, where the values are 
+visually emphasized with colors based on their magnitude. 
+Steps to Create the Highlight Table 
+1. Add a Matrix Visual: 
+ In the Visualizations Pane, select the Matrix Visual. 
+2. Set Data Fields: 
+i. 
+Rows: Drag the Job Role field to the Rows field. 
+ This will create a row for each unique job role. 
+ii. 
+Columns: Drag the Job Satisfaction field to the Columns field. 
+ This will create a column for each level of job satisfaction (e.g., 1, 2, 3, 4, 5). 
+iii. 
+Values: Drag the EmployeeID field to the Values field. 
+ Set the aggregation to Count. This will count the number of employees for each 
+combination of job role and job satisfaction rating. 
+vi) Create a Horizontal Bar Chart to Show the Attrition Count for Each Education 
+Field 
+A horizontal bar chart is ideal for comparing values across categories. Here, it will show the attrition 
+count grouped by different education fields. 
+Steps to Create the Horizontal Bar Chart 
+1. Add a Clustered Bar Chart: 
+ Select the Clustered Bar Chart. 
+2. Set Data Fields: 
+ Drag Education Field to the Y-axis (Categories). 
+ Drag Attrition Count to the X-axis (Values). 
+3. Format the Chart: 
+ Sort by Values: Click on the ellipsis (three dots) in the visual and choose Sort by 
+Attrition Count in descending order to arrange bars from largest to smallest. 
+ Enable Data Labels: 
+ Go to the Format Pane and turn on Data Labels. 
+ This displays the attrition count directly on the bars. 
+vii) Create multiple donut chart to show the Attrition Rate by Gender for different 
+Age group 
+Steps to Create Multiple Donut Charts for Attrition Rate by Gender for Different 
+Age Groups 
+Step 1: Set Up the Data Fields 
+1. Donut Chart Visualization: 
+ Go to the Visualizations Pane in Power BI. 
+ Select the Donut Chart icon to create a donut chart. 
+2. Set the Data Fields: 
+ Legend (Categories): Drag the Gender field from your dataset into the Legend 
+field well. This will split the donut chart by gender (e.g., Male, Female) 
+ Values: Drag the Attrition Rate measure (the one you created earlier) into the 
+Values field well. 
+ This will represent the attrition rate as a proportion for each gender category. 
+3. Apply Filters for Age Group: 
+ Age Group Filter: To show attrition rates for specific age groups, drag the 
+Age Group field into the Filters pane  
+ This will allow you to filter the donut chart by age group. 
+Step 2: Duplicate the Donut Chart for Each Age Group 
+1. Duplicate the Donut Chart: 
+ After setting up one donut chart, you can duplicate it to create separate charts 
+for each Age Group. 
+ To duplicate, select the chart and press Ctrl + C (copy) and Ctrl + V (paste), 
+or simply use Right-click > Duplicate. 
+2. Set Filters for Each Age Group: 
+ For each duplicated donut chart, you need to filter it to show the Attrition 
+Rate for a specific Age Group. 
+ For example: 
+ For the first chart, set the Age Group filter to 25-30. 
+ For the second chart, set the Age Group filter to 30-35, and so on. 
+3. Apply the Filter: 
+ Click on the donut chart. 
+ In the Filters pane, drag the Age Group field to the Filters on this visual section. 
+ Select the appropriate Age Group (e.g., 25-30, 30-35, etc.) for each chart. 
+Step 3: Format the Donut Chart 
+Once you have the donut charts set up for each age group, follow these formatting steps to make 
+them visually appealing: 
+1. Data Labels: 
+ Go to the Format Pane (paint roller icon). 
+ Under Data labels, toggle On. 
+ Detail Labels-> Options-> Label Contents-> Select Category, 
+Percentage from the Drop Down list. 
+ This will display the Category (Male and Female), Percentage as percentages on the donut 
+slices.
