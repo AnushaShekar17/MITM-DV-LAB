@@ -54,31 +54,29 @@ KPI Dashboard
 (i) Total Employee Count 
 1. Select the Card Visual in the Visualizations pane. 
 2. In the Fields pane: 
- Drag the EmployeeID to  the Fields section. 
- Change the aggregation to Count (click on the dropdown arrow next to 
-EmployeeID in the Values field). 
+ Drag the EmployeeID to  the Fields section. 
+ Change the aggregation to Count (click on the dropdown arrow next to EmployeeID in the Values field). 
 3. Rename the card title to Total Employee Count: 
- Go to Format Visual ->Title, enable it, and type the title Total Employee Count. 
+ Go to Format Visual ->Title, enable it, and type the title Total Employee Count. 
+
 (ii) Attrition Count (Attrition is when employees leave an organization) 
 1. click New Measure. 
 2. Enter the following DAX formula: 
 DAX 
 Attrition_Count = COUNTX(FILTER('HR', 'HR'[Attrition] = "Yes"), 'HR'[EmployeeID]) 
 a. FILTER('HR', 'HR'[Attrition] = "Yes") 
- What it does: 
- The FILTER function creates a new table by applying a condition. 
- In this case, it filters the HR table to include only rows where the Attrition column equals 
-"Yes". 
- Result: 
- A smaller virtual table containing only employees who have left the organization. 
+ What it does: 
+ The FILTER function creates a new table by applying a condition. 
+ In this case, it filters the HR table to include only rows where the Attrition column equals "Yes". 
+ Result: 
+ A smaller virtual table containing only employees who have left the organization. 
 b. COUNTX(FILTER, 'HR'[EmployeeID]) 
- The COUNTX function iterates over a table (in this case, the filtered table created by FILTER) 
-and counts the non-blank values in the specified column (EmployeeID). 
- Each employee has a unique EmployeeID. By counting these IDs in the filtered table, we get 
-the total number of employees who have left. 
+ The COUNTX function iterates over a table (in this case, the filtered table created by FILTER) and counts the non-blank values in the specified column (EmployeeID). 
+ Each employee has a unique EmployeeID. By counting these IDs in the filtered table, we get the total number of employees who have left. 
 3. Add a new Card Visual to the canvas. 
 4. Drag the Attrition Count measure into the card. 
 5. Rename the card title to Attrition Count. 
+
 (iii) Attrition Rate 
 1. click New Measure. 
 Enter the following DAX formula:   
@@ -87,11 +85,10 @@ Attrition_Rate = DIVIDE([Attrition_Count],COUNT('HR'[EmployeeID]), 0) * 100
 2. Press Enter. 
 3. Add a Card Visual to the canvas. 
 4. Drag the Attrition Rate measure into the card.  Rename the card title to Attrition Rate. 
- The formula calculates the Attrition Rate as a percentage, showing the proportion of employees who 
-have left the organization compared to the total number of employees. 
- if the denominator (COUNT('HR'[EmployeeID])) is zero, it returns the third argument (in this case, 0), 
-avoiding runtime errors. 
- Multiplies the result of the division by 100 to convert it into a percentage. 
+ The formula calculates the Attrition Rate as a percentage, showing the proportion of employees who have left the organization compared to the total number of employees. 
+ if the denominator (COUNT('HR'[EmployeeID])) is zero, it returns the third argument (in this case, 0), avoiding runtime errors. 
+ Multiplies the result of the division by 100 to convert it into a percentage.
+
 (iv) Active Employees 
 1. click New Measure. 
 2. Enter the following DAX formula: 
@@ -100,37 +97,32 @@ Active_Employees = COUNTX(FILTER('HR', 'HR'[Attrition] = "No"), 'HR'[EmployeeID]
 4. Add a Card Visual to the canvas. 
 5. Drag the Active Employees measure into the card. 
 6. Rename the card title to Active Employees. 
+
 (v) Average Age 
 1. Add a new Card Visual to the canvas. 
 2. Drag the Age column into the card. 
 3. Power BI will display the default aggregation as Sum. 
-4. Change the aggregation: Click on the dropdown arrow next to Age in the Values field and 
-select Average. 
+4. Change the aggregation: Click on the dropdown arrow next to Age in the Values field and select Average. 
 5. Rename the card title to Average Age. 
-ii) 
-Create a Lollipop Chart to show the attrition rate based on gender 
-category. 
+
+ii) Create a Lollipop Chart to show the attrition rate based on gender category. 
 Lollipop Chart 
-A Lollipop Chart is a variation of a bar chart that uses a line (or stick) with a circular marker (the 
-lollipop) to represent data points. It’s often used to emphasize individual data points in a clean, visually 
-appealing way. It’s similar to a bar chart but offers better clarity, especially when you want to 
-emphasize data values without crowding the visualization with long bars. 
-In a Lollipop Chart, the line represents the magnitude of a metric (such as attrition rate), and the 
-marker at the end of the line represents the actual value. This visualization is particularly effective for 
+A Lollipop Chart is a variation of a bar chart that uses a line (or stick) with a circular marker (the lollipop) to represent data points. It’s often used to emphasize individual data points in a clean, visually 
+appealing way. It’s similar to a bar chart but offers better clarity, especially when you want to emphasize data values without crowding the visualization with long bars. 
+In a Lollipop Chart, the line represents the magnitude of a metric (such as attrition rate), and the marker at the end of the line represents the actual value. This visualization is particularly effective for 
 showing comparisons across different categories. 
-Steps to Create a Lollipop Chart to Show Attrition Rate by Gender 
-Since Lollipop Chart is not available on Desktop version of powerBI, we shall use Line Chart to create 
+
+Steps to Create a Lollipop Chart to Show Attrition Rate by Gender Since Lollipop Chart is not available on Desktop version of powerBI, we shall use Line Chart to create 
 the Lollipop Chart.  
 1. Select the Line chart: 
 2. Drop Gender to X-Axis well and Attrition Count to Y-Axis well. 
-3. Go to Markers-> Enable show for all categories-> Change the shape to Bullet-> Increase its 
-size to 20 px. Now the size of the data point would be increased indicating the head of the 
+3. Go to Markers-> Enable show for all categories-> Change the shape to Bullet-> Increase its size to 20 px. Now the size of the data point would be increased indicating the head of the 
 Lollipop for the Lollipop chart. 
 4. Now to connect a line from X-Axis to the data point (Indicating the Lollipop stick), 
- Go to Error Bars-> Make sure the Options Enabled to ON 
- Drop Attrition_Count to Upper bound well. 
- Create a new measure LB and set it to 0 i.e LB=0 and add this to Lower bound well. 
- Under the same Options Enabled-> Bar(ON)->Width is 10 PX, indicating the stick of the 
+ Go to Error Bars-> Make sure the Options Enabled to ON 
+ Drop Attrition_Count to Upper bound well. 
+ Create a new measure LB and set it to 0 i.e LB=0 and add this to Lower bound well. 
+ Under the same Options Enabled-> Bar(ON)->Width is 10 PX, indicating the stick of the 
 Lollipop for the chart. 
 5. To disconnect the lines joining the data points: 
 Go to Lines-> Line-> Width-> set to 0 PX. 
