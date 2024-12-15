@@ -1,29 +1,25 @@
-Lab 11. Analysis of HR dataset  
-i) Create KPI to show employee count, attrition count, attrition rate, attrition count, active employees, 
-and average age. 
+LAB EXPERIMENT-11. Analysis of HR dataset  
+i) Create KPI to show employee count, attrition count, attrition rate, attrition count, active employees, and average age. 
 ii) Create a Lollipop Chart to show the attrition rate based on gender category. 
 iii) Create a pie chart to show the attrition percentage based on Department Category. 
 iv) Create a bar chart to display the number of employees by Age group. 
-v) Create a highlight table to show the Job Satisfaction Rating for each job role based on employee 
-count  
-vi) Create a horizontal bar chart to show the attrition count for each Education field Education field 
-wise attrition-drag education field to rows, sum attrition count to column. 
-vii) Create multiple donut chart to show the Attrition Rate by Gender for different Age group 
+v) Create a highlight table to show the Job Satisfaction Rating for each job role based on employee count  
+vi) Create a horizontal bar chart to show the attrition count for each Education field Education field wise attrition-drag education field to rows, sum attrition count to column. 
+vii) Create multiple donut chart to show the Attrition Rate by Gender for different Age group
+
+
 Introduction 
-This program is designed to analyze and visualize an HR dataset. The primary objective is to extract 
-meaningful insights about employees and their attributes such as attrition rates, demographics, 
+This program is designed to analyze and visualize an HR dataset. The primary objective is to extract meaningful insights about employees and their attributes such as attrition rates, demographics, 
 education fields, job satisfaction, and more.  
-By leveraging interactive visuals like KPIs, bar charts, pie charts, and highlight tables, this program 
-enables HR professionals to make data-driven decisions regarding workforce management and 
+By leveraging interactive visuals like KPIs, bar charts, pie charts, and highlight tables, this program enables HR professionals to make data-driven decisions regarding workforce management and 
 retention strategies. 
-The analysis covers key performance indicators (KPIs), gender-based attrition trends, department-wise 
-attrition percentages, and job satisfaction levels across roles. Also, it provides age-group 
-categorizations and attrition analysis for education fields, helping organizations understand workforce 
-trends comprehensively. 
+The analysis covers key performance indicators (KPIs), gender-based attrition trends, department-wise attrition percentages, and job satisfaction levels across roles. Also, it provides age-group 
+categorizations and attrition analysis for education fields, helping organizations understand workforce trends comprehensively. 
+
 Introduction to the Dataset 
-The dataset represents a HR database containing details about employees, their roles, demographics, 
-and employment status. It is structured to capture critical information about employees to facilitate 
+The dataset represents a HR database containing details about employees, their roles, demographics, and employment status. It is structured to capture critical information about employees to facilitate 
 workforce analysis and meet the requirements of the visualizations specified. 
+
 Description of the Dataset 
  EmployeeID: A unique identifier for each employee (1 to 50). 
  Name: Employee names, reflecting a mix of Indian male and female names for diversity. 
