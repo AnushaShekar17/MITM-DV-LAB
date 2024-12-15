@@ -21,39 +21,35 @@ The dataset represents a HR database containing details about employees, their r
 workforce analysis and meet the requirements of the visualizations specified. 
 
 Description of the Dataset 
- EmployeeID: A unique identifier for each employee (1 to 50). 
- Name: Employee names, reflecting a mix of Indian male and female names for diversity. 
- Age: The age of employees, ranging from 25 to 50 years. 
- Gender: The gender of employees, categorized as either Male or Female. 
- Department: The department in which employees work, including IT, HR, Sales, Finance, and 
-Operations. 
- EducationField: The educational background of employees, such as Computer Science, Human 
-Resources, Marketing, etc. 
- JobRole: The specific role of the employee, e.g., Software Engineer, HR Manager, Data Analyst, etc. 
- JobSatisfaction: A rating (1 to 5) representing job satisfaction, where 1 is the lowest and 5 is the 
-highest. 
- Attrition: Indicates whether the employee has left the organization (Yes) or is still active (No). 
- AgeGroup: Categorized age ranges (e.g., 25-30, 30-35) for grouping employees by age. 
+ EmployeeID: A unique identifier for each employee (1 to 50). 
+ Name: Employee names, reflecting a mix of Indian male and female names for diversity. 
+ Age: The age of employees, ranging from 25 to 50 years. 
+ Gender: The gender of employees, categorized as either Male or Female. 
+ Department: The department in which employees work, including IT, HR, Sales, Finance, and Operations. 
+ EducationField: The educational background of employees, such as Computer Science, Human Resources, Marketing, etc. 
+ JobRole: The specific role of the employee, e.g., Software Engineer, HR Manager, Data Analyst, etc. 
+ JobSatisfaction: A rating (1 to 5) representing job satisfaction, where 1 is the lowest and 5 is the highest. 
+ Attrition: Indicates whether the employee has left the organization (Yes) or is still active (No). 
+ AgeGroup: Categorized age ranges (e.g., 25-30, 30-35) for grouping employees by age. 
  
 Objectives of the Program 
-1. Calculate key workforce metrics like total employee count, attrition count, attrition rate, and 
-average age. 
+1. Calculate key workforce metrics like total employee count, attrition count, attrition rate, and average age. 
 2. Analyze attrition trends by gender, department, age group, and education field. 
 3. Display job satisfaction levels across job roles to identify engagement patterns. 
 4. Segment employees by demographics such as age groups and gender for deeper insights. 
 5. Create interactive visualizations for dynamic data exploration and filtering. 
-i) 
-Create KPI to show employee count, attrition count, attrition rate, attrition 
-count, active employees, and average age.  
+i) Create KPI to show employee count, attrition count, attrition rate, attrition count, active employees, and average age.  
 KPI (Key Performance Indicator) is a measurable value that demonstrates how effectively an individual, 
 team, or organization is achieving a business objective. KPIs are used to evaluate the success of an organization 
 or a specific activity in which it engages. 
+
 Visually distinct KPIs displaying- 
- Total Employee Count 
- Attrition Count 
- Attrition Rate 
- Active Employees 
- Average Age 
+ Total Employee Count 
+ Attrition Count 
+ Attrition Rate 
+ Active Employees 
+ Average Age 
+
 KPI Dashboard 
 (i) Total Employee Count 
 1. Select the Card Visual in the Visualizations pane. 
