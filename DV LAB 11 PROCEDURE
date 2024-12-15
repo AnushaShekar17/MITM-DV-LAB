@@ -126,61 +126,55 @@ Lollipop for the Lollipop chart.
 Lollipop for the chart. 
 5. To disconnect the lines joining the data points: 
 Go to Lines-> Line-> Width-> set to 0 PX. 
-iii) Create a pie chart to show the attrition percentage based on Department 
-Category. 
+
+iii) Create a pie chart to show the attrition percentage based on Department Category. 
 Create a Pie Chart to Show Attrition Percentage by Department 
 A Pie Chart is an effective way to visualize proportional data. In this case, we’ll use it to display the 
-attrition percentage across different departments, helping to identify which department contributes the 
-most to employee attrition. 
+attrition percentage across different departments, helping to identify which department contributes the most to employee attrition. 
 Step-by-Step Guide to Create the Pie Chart 
 Step 1: Add a Pie Chart 
 1. Select the Pie Chart Visual: 
- Click on the Pie Chart icon. 
+ Click on the Pie Chart icon. 
 Step 2: Set Data Fields 
 1. Add Department to the Legend: 
- Drag the Department column into the Legend field well of the pie chart. 
- This will create a separate slice in the pie chart for each department in the 
-dataset. 
-2. Drag the Attrition_Count measure into the Values field of the pie chart. 
+ Drag the Department column into the Legend field well of the pie chart. 
+ This will create a separate slice in the pie chart for each department in the dataset. 
+2. Drag the Attrition_Count measure into the Values field of the pie chart.
+
 iv)  Create a bar chart to display the number of employees by Age group. 
 1. Add a Bar Chart: 
- Select the Clustered Bar Chart visual. 
+ Select the Clustered Bar Chart visual. 
 2. Set Data Fields: 
- Add AgeGroup to the X-Axis. 
- Add EmployeeID to the Y-Axis field and set aggregation to Count. 
+ Add AgeGroup to the X-Axis. 
+ Add EmployeeID to the Y-Axis field and set aggregation to Count. 
 3. Format Chart: 
 Add Data Labels to display the employee count: Data Labels: ON 
-v) Create a highlight table to show the Job Satisfaction Rating for each job role based 
-on employee count. 
-A highlight table in Power BI is a variation of a matrix or table visualization, where the values are 
-visually emphasized with colors based on their magnitude. 
+
+v) Create a highlight table to show the Job Satisfaction Rating for each job role based on employee count. 
+A highlight table in Power BI is a variation of a matrix or table visualization, where the values are visually emphasized with colors based on their magnitude. 
+
 Steps to Create the Highlight Table 
 1. Add a Matrix Visual: 
- In the Visualizations Pane, select the Matrix Visual. 
+ In the Visualizations Pane, select the Matrix Visual. 
 2. Set Data Fields: 
-i. 
-Rows: Drag the Job Role field to the Rows field. 
- This will create a row for each unique job role. 
-ii. 
-Columns: Drag the Job Satisfaction field to the Columns field. 
- This will create a column for each level of job satisfaction (e.g., 1, 2, 3, 4, 5). 
-iii. 
-Values: Drag the EmployeeID field to the Values field. 
- Set the aggregation to Count. This will count the number of employees for each 
-combination of job role and job satisfaction rating. 
-vi) Create a Horizontal Bar Chart to Show the Attrition Count for Each Education 
-Field 
-A horizontal bar chart is ideal for comparing values across categories. Here, it will show the attrition 
-count grouped by different education fields. 
+i. Rows: Drag the Job Role field to the Rows field. 
+ This will create a row for each unique job role. 
+ii.Columns: Drag the Job Satisfaction field to the Columns field. 
+ This will create a column for each level of job satisfaction (e.g., 1, 2, 3, 4, 5). 
+iii.Values: Drag the EmployeeID field to the Values field. 
+ Set the aggregation to Count. This will count the number of employees for each combination of job role and job satisfaction rating. 
+
+vi) Create a Horizontal Bar Chart to Show the Attrition Count for Each Education Field 
+A horizontal bar chart is ideal for comparing values across categories. Here, it will show the attrition count grouped by different education fields. 
+
 Steps to Create the Horizontal Bar Chart 
 1. Add a Clustered Bar Chart: 
- Select the Clustered Bar Chart. 
+ Select the Clustered Bar Chart. 
 2. Set Data Fields: 
- Drag Education Field to the Y-axis (Categories). 
- Drag Attrition Count to the X-axis (Values). 
+ Drag Education Field to the Y-axis (Categories). 
+ Drag Attrition Count to the X-axis (Values). 
 3. Format the Chart: 
- Sort by Values: Click on the ellipsis (three dots) in the visual and choose Sort by 
-Attrition Count in descending order to arrange bars from largest to smallest. 
+ Sort by Values: Click on the ellipsis (three dots) in the visual and choose Sort by Attrition Count in descending order to arrange bars from largest to smallest. 
  Enable Data Labels: 
  Go to the Format Pane and turn on Data Labels. 
  This displays the attrition count directly on the bars. 
