@@ -43,42 +43,37 @@ The objectives of this program are as follow-
 
 i) Create a Donut chart to show the percentage of movie and TV shows. 
 1. Create Donut Chart: 
- Go to the Report View, Select the Donut Chart visual from the Visualizations pane. 
- Drag Type to Legend. 
- Drag Title with the count of Title to Values. 
+ Go to the Report View, Select the Donut Chart visual from the Visualizations pane. 
+ Drag Type to Legend. 
+ Drag Title with the count of Title to Values. 
 2. Format the Chart: 
- Customize colors for Movie and TV Show. 
- Display percentage in labels by selecting Format-> Visuals->Label Contents->Select 
-Category, Percentage of total 
+ Customize colors for Movie and TV Show. 
+ Display percentage in labels by selecting Format-> Visuals->Label Contents->Select Category, Percentage of total 
+
 ii) Create an Area Chart to shows by release year and type. 
-An Area Chart is used to show trends over time, highlighting the magnitude of changes across 
-categories. In this case, we will create an Area Chart to display the count of Movies and TV 
+An Area Chart is used to show trends over time, highlighting the magnitude of changes across categories. In this case, we will create an Area Chart to display the count of Movies and TV 
 Shows for each release year, categorized by type. 
 1. Select the Area Chart from the Visualizations pane. 
 2. Drag Release_Year to X-Axis,  
 This will set the x-axis of the chart, showing the timeline of release years. 
 3. Drag Type to Legend:  
- Drag the Type column (which categorizes content as either Movie or TV Show) to the 
-Legend field in the Visualizations pane. 
- This will create separate areas in the chart for each type, allowing us to compare their trends 
-over time. 
+ Drag the Type column (which categorizes content as either Movie or TV Show) to the Legend field in the Visualizations pane. 
+This will create separate areas in the chart for each type, allowing us to compare their trends over time. 
 4. Drag Count to Values (ensure it aggregates properly). Drag the Title column to the Y-Axis 
 Values field. 
 To show the count of titles (Movies and TV Shows) for each year: 
- Drag the Title column to the Y-Axis Values field. 
- Power BI will automatically aggregate the values. By default, it will calculate 
-the Count of titles. 
+ Drag the Title column to the Y-Axis Values field. 
+ Power BI will automatically aggregate the values. By default, it will calculate the Count of titles. 
 Ensure the aggregation is correct: 
- Click the dropdown next to the field in Values. 
- Select Count or Count (Distinct) to avoid summing numerical values 
-unnecessarily. 
+ Click the dropdown next to the field in Values. 
+Select Count or Count (Distinct) to avoid summing numerical values unnecessarily. 
 5. Adjust the X-axis to display all years. 
 By default, Power BI may group or compress the x-axis if there are too many years. 
 To fix this: 
- Select the chart. 
- Go to the Format pane (paint roller icon). 
- Expand the X-axis section, Set Type to Categorical (if it is Continuous by default). 
- Ensure all release years are displayed in order. Add data labels for clarity. 
+ Select the chart. 
+ Go to the Format pane (paint roller icon). 
+ Expand the X-axis section, Set Type to Categorical (if it is Continuous by default). 
+ Ensure all release years are displayed in order. Add data labels for clarity. 
 iii) Create a horizontal bar chart to show Top 10 genre. 
 Step 1: Select the Horizontal Bar Chart 
 In the Visualizations pane, select the Horizontal Bar Chart icon. This icon looks like a bar 
