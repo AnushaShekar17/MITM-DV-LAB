@@ -29,7 +29,8 @@ Key fields in the dataset include:
  Genre: The primary genre (Theme) of the content (e.g., Drama, Comedy, Action, Thriller…). 
  Release Year: The year in which the movie or TV show was released. 
  Country: The primary country associated with the production of the content. 
- Description: A brief synopsis or description of the content. 
+ Description: A brief synopsis or description of the content.
+
 3. Objectives of the Program 
 The objectives of this program are as follow- 
 1. To understand how to analyze a structured dataset in Power BI and create meaningful insights. 
@@ -38,8 +39,8 @@ The objectives of this program are as follow-
 4. To identify the most popular genres by creating a Horizontal Bar Chart for the top 10 genres. 
 5. To map the geographic spread of content availability using a Map Visualization. 
 6. To display detailed textual information for specific movies or TV shows using a Text Sheet. 
-7. To combine multiple visualizations into a cohesive Interactive Dashboard for comprehensive 
-analysis. 
+7. To combine multiple visualizations into a cohesive Interactive Dashboard for comprehensive analysis. 
+
 i) Create a Donut chart to show the percentage of movie and TV shows. 
 1. Create Donut Chart: 
  Go to the Report View, Select the Donut Chart visual from the Visualizations pane. 
