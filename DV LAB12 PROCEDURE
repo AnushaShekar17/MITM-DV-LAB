@@ -130,28 +130,21 @@ Map Visual
 
 v) Create a text sheet to show the description of any movie/movies.  
 Text Sheet in Power BI  
-Is a Table or Card Visual that allows you to display textual data, such as the description of movies 
-in this case.                       
+Is a Table or Card Visual that allows you to display textual data, such as the description of movies in this case.                       
 Slicer in Power BI 
-A Slicer in Power BI is a visual tool used to filter data interactively. When applied to a text sheet or 
-other visuals, a slicer allows users to select specific values to dynamically filter and display related 
-information in the associated visuals. This enhances interactivity and usability by enabling focused 
-exploration of data. 
+A Slicer in Power BI is a visual tool used to filter data interactively. When applied to a text sheet or other visuals, a slicer allows users to select specific values to dynamically filter and display related 
+information in the associated visuals. This enhances interactivity and usability by enabling focused exploration of data. 
 Steps to Create a Text Sheet 
 1. Add a Table or Card Visual 
- In the Visualizations pane, select either: 
- Table: For a list of movie descriptions. 
- Slicer Users can drill down into specific details for a single movie description (useful 
-for displaying description of one movie at a time). 
+ In the Visualizations pane, select either: 
+ Table: For a list of movie descriptions. 
+ Slicer Users can drill down into specific details for a single movie description (useful for displaying description of one movie at a time). 
 2. Drag the Required Fields 
- Drag the Title column from your dataset into the visual. This will display the names of the 
-movies. 
- Drag the Description column into the same visual. This will show the corresponding 
-descriptions for the movies. 
+ Drag the Title column from your dataset into the visual. This will display the names of the movies. 
+ Drag the Description column into the same visual. This will show the corresponding descriptions for the movies. 
 3. Filter to Show Specific Movies 
- To display a specific movie or group of movies: 
- Add a Slicer from the Visualizations pane.                                 
- Drag the Title column into the slicer. 
- This allows users to select one or multiple movies, and the table or card visual will 
-update dynamically to show only the descriptions for the selected movies (Hold 
+ To display a specific movie or group of movies: 
+ Add a Slicer from the Visualizations pane.                                 
+ Drag the Title column into the slicer. 
+ This allows users to select one or multiple movies, and the table or card visual will update dynamically to show only the descriptions for the selected movies (Hold 
 Control key for multiple selection on the slicer). 
