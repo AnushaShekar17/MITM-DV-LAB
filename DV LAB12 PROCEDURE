@@ -106,35 +106,28 @@ To display only the Top 10 Genres, we need to apply a filter.
  counts are shown first. 
  
 iv) Create a map to display total shows by country. 
-In Power BI, the Map visual allows us to plot data on a geographical map, where different areas (such 
-as countries, regions, or cities) are represented based on data points. 
+In Power BI, the Map visual allows us to plot data on a geographical map, where different areas (such as countries, regions, or cities) are represented based on data points. 
 Step 1: Select the Map Visual    
-In the Visualizations pane, find and click on the Map visual icon. The Map visual is 
-represented by a globe icon with a location pin. 
+In the Visualizations pane, find and click on the Map visual icon. The Map visual is represented by a globe icon with a location pin. 
 Step 2: Assign Data to the Map 
-For this map to display the total number of shows by country, we need to provide data fields for 
-Location (to specify where the shows are located) and Values (to represent the total number of 
+For this map to display the total number of shows by country, we need to provide data fields for Location (to specify where the shows are located) and Values (to represent the total number of 
 shows in each location). 
 2.1. Drag the Country Field to Location 
- Drag the Country field and drop it into the Location well under the Map visual in the 
-Visualizations pane. The location field defines the geographical points on the map. Since we 
-are mapping by country, Country should be placed here. 
- Power BI automatically recognizes common geographical names like countries, states, or 
-cities, and maps them accordingly. 
+ Drag the Country field and drop it into the Location well under the Map visual in the Visualizations pane. The location field defines the geographical points on the map. Since we 
+ are mapping by country, Country should be placed here. 
+ Power BI automatically recognizes common geographical names like countries, states, or cities, and maps them accordingly. 
 2.2. Drag the Count Column to Bubble Size 
 Next, we need to display the data on the map by using the Size fields. 
- Size: The Size field determines the size of the markers (dots or circles) displayed on the map. 
+ Size: The Size field determines the size of the markers (dots or circles) displayed on the map. 
 Larger markers will represent higher values. 
- Drag the Count of Titles measure into the Bubble Size field. This will make the size of the 
-markers on the map correspond to the number of shows in each country. 
+ Drag the Count of Titles measure into the Bubble Size field. This will make the size of the markers on the map correspond to the number of shows in each country. 
 Step 3: Review and Interpret the Map 
-After following these steps, your map will show the total number of shows by country using either 
-varying marker sizes. 
- Larger markers represent countries with more shows. 
- Smaller markers represent countries with fewer shows. 
-The map will provide a geographical distribution of the shows, making it easy to spot which 
-countries have the most shows and which ones have fewer. 
+After following these steps, your map will show the total number of shows by country using either varying marker sizes. 
+ Larger markers represent countries with more shows. 
+ Smaller markers represent countries with fewer shows. 
+The map will provide a geographical distribution of the shows, making it easy to spot which countries have the most shows and which ones have fewer. 
 Map Visual 
+
 v) Create a text sheet to show the description of any movie/movies.  
 Text Sheet in Power BI  
 Is a Table or Card Visual that allows you to display textual data, such as the description of movies 
