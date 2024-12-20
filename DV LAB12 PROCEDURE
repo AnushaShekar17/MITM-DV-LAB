@@ -74,19 +74,16 @@ To fix this:
  Go to the Format pane (paint roller icon). 
  Expand the X-axis section, Set Type to Categorical (if it is Continuous by default). 
  Ensure all release years are displayed in order. Add data labels for clarity. 
+
 iii) Create a horizontal bar chart to show Top 10 genre. 
 Step 1: Select the Horizontal Bar Chart 
-In the Visualizations pane, select the Horizontal Bar Chart icon. This icon looks like a bar 
-chart with horizontal bars. This will add a blank bar chart to your report canvas. 
+In the Visualizations pane, select the Horizontal Bar Chart icon. This icon looks like a bar chart with horizontal bars. This will add a blank bar chart to your report canvas. 
 Step 2: Prepare the Dataset for the Bar Chart 
-We need to display the Genres and the number of times each genre appears. The data should include 
-a Genre field and a way to count the number of items (e.g., movies or TV shows) in each genre. 
+We need to display the Genres and the number of times each genre appears. The data should include a Genre field and a way to count the number of items (e.g., movies or TV shows) in each genre. 
 1. Y-axis: In a horizontal bar chart, the Y-axis represents the categories (in this case, the 
 genres), and each genre will have a corresponding horizontal bar. 
-2. X-axis: The X-axis will represent the values associated with each category (in this case, the 
-count of titles or movies/TV shows in each genre), which will determine the length of the bars. 
-Note: We can also add a measure that shows the count of Titles or the number of shows in each 
-genre. This will serve as the bar's length (how many movies/TV shows exist in each genre). 
+2. X-axis: The X-axis will represent the values associated with each category (in this case, the count of titles or movies/TV shows in each genre), which will determine the length of the bars. 
+Note: We can also add a measure that shows the count of Titles or the number of shows in each genre. This will serve as the bar's length (how many movies/TV shows exist in each genre). 
 Step 3: Add a Measure for Count 
 Create a measure that counts the number of shows or movies in each genre. 
 To create the count: 
@@ -102,17 +99,11 @@ To display only the Top 10 Genres, we need to apply a filter.
 2. Find the Genre field under Filters on this visual. 
 3. Click on the Genre field dropdown and select Top N. 
 4. In the Top N filter settings: 
- Select Top. 
- Enter 10 as the number of items. 
- For the By value, drag the Count of Titles measure into the By value field. 
- Set the Sort by to Count of Titles measure to ensure that the genres with the highest 
-counts are shown first. 
- 
- 
- 
- 
- 
- 
+ Select Top. 
+ Enter 10 as the number of items. 
+ For the By value, drag the Count of Titles measure into the By value field. 
+ Set the Sort by to Count of Titles measure to ensure that the genres with the highest 
+ counts are shown first. 
  
 iv) Create a map to display total shows by country. 
 In Power BI, the Map visual allows us to plot data on a geographical map, where different areas (such 
