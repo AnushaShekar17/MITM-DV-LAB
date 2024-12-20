@@ -1,21 +1,25 @@
-Lab 12. Analysis of Amazon Prime Dataset  
+Lab 12. Analysis of Amazon Prime Dataset 
+
 i) Create a Donut chart to show the percentage of movie and tv shows. 
 ii) Create an area chart to shows by release year and type. 
 iii) Create a horizontal bar chart to show Top 10 genre. 
 iv) Create a map to display total shows by country. 
 v) Create a text sheet to show the description of any movie/movies. 
-vi) Build an interactive Dashboard. 
+vi) Build an interactive Dashboard.
+
 1. Introduction to the Program. 
- Amazon Prime, a popular streaming platform, offers a diverse range of movies, TV shows, 
+Amazon Prime, a popular streaming platform, offers a diverse range of movies, TV shows, 
 and original content. This analysis demonstrates how visualizations can help uncover trends, 
 provide insights into content distribution, and aid in decision-making processes. In this 
 program, we analyze an Amazon Prime Dataset using Power BI, focusing on visualizing and 
 understanding the patterns in the data. 
- The dataset represents the details of movies and TV shows available on Amazon Prime. It 
+
+The dataset represents the details of movies and TV shows available on Amazon Prime. It 
 includes key information such as titles, types (movie or TV show), genres, release years, 
 countries, and descriptions. Analyzing such a dataset can provide actionable insights for 
 content developers, marketers, and platform managers to understand content preferences and 
-improve user engagement. 
+improve user engagement.
+
 2. Introduction to the Dataset 
 The dataset is a simulated representation of Amazon Prime’s content library. It consists of 50 
 records, each detailing attributes of a specific movie or TV show. 
