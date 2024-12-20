@@ -24,12 +24,12 @@ improve user engagement.
 The dataset is a simulated representation of Amazon Prime’s content library. It consists of 50 
 records, each detailing attributes of a specific movie or TV show. 
 Key fields in the dataset include: 
- Title: The name of the movie or TV show. 
- Type: Specifies whether it is a movie or a TV show. 
- Genre: The primary genre (Theme) of the content (e.g., Drama, Comedy, Action, Thriller…). 
- Release Year: The year in which the movie or TV show was released. 
- Country: The primary country associated with the production of the content. 
- Description: A brief synopsis or description of the content. 
+ Title: The name of the movie or TV show. 
+ Type: Specifies whether it is a movie or a TV show. 
+ Genre: The primary genre (Theme) of the content (e.g., Drama, Comedy, Action, Thriller…). 
+ Release Year: The year in which the movie or TV show was released. 
+ Country: The primary country associated with the production of the content. 
+ Description: A brief synopsis or description of the content. 
 3. Objectives of the Program 
 The objectives of this program are as follow- 
 1. To understand how to analyze a structured dataset in Power BI and create meaningful insights. 
