@@ -147,4 +147,4 @@ Steps to Create a Text Sheet
  Add a Slicer from the Visualizations pane.                                 
  Drag the Title column into the slicer. 
  This allows users to select one or multiple movies, and the table or card visual will update dynamically to show only the descriptions for the selected movies (Hold 
-Control key for multiple selection on the slicer). 
+ Control key for multiple selection on the slicer). 
