@@ -31,7 +31,7 @@ workforce analysis and meet the requirements of the visualizations specified.
  Attrition: Indicates whether the employee has left the organization (Yes) or is still active (No). 
  AgeGroup: Categorized age ranges (e.g., 25-30, 30-35) for grouping employees by age. 
  
-Objectives of the Program 
+ Objectives of the Program 
 1. Calculate key workforce metrics like total employee count, attrition count, attrition rate, and average age. 
 2. Analyze attrition trends by gender, department, age group, and education field. 
 3. Display job satisfaction levels across job roles to identify engagement patterns. 
