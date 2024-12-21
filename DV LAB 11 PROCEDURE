@@ -19,7 +19,7 @@ Introduction to the Dataset
 The dataset represents a HR database containing details about employees, their roles, demographics, and employment status. It is structured to capture critical information about employees to facilitate 
 workforce analysis and meet the requirements of the visualizations specified. 
 
-Description of the Dataset 
+ Description of the Dataset 
  EmployeeID: A unique identifier for each employee (1 to 50). 
  Name: Employee names, reflecting a mix of Indian male and female names for diversity. 
  Age: The age of employees, ranging from 25 to 50 years. 
