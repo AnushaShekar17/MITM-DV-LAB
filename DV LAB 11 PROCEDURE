@@ -140,13 +140,13 @@ Step 2: Set Data Fields
  This will create a separate slice in the pie chart for each department in the dataset. 
 2. Drag the Attrition_Count measure into the Values field of the pie chart.
 
-iv)  Create a bar chart to display the number of employees by Age group. 
-1. Add a Bar Chart: 
+iv) Create a bar chart to display the number of employees by Age group. 
+1.Add a Bar Chart: 
  Select the Clustered Bar Chart visual. 
-2. Set Data Fields: 
+2.Set Data Fields: 
  Add AgeGroup to the X-Axis. 
  Add EmployeeID to the Y-Axis field and set aggregation to Count. 
-3. Format Chart: 
+3.Format Chart: 
 Add Data Labels to display the employee count: Data Labels: ON 
 
 v) Create a highlight table to show the Job Satisfaction Rating for each job role based on employee count. 
