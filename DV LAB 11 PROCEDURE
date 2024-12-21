@@ -67,7 +67,8 @@ a. FILTER('HR', 'HR'[Attrition] = "Yes")
  What it does: 
  The FILTER function creates a new table by applying a condition. 
  In this case, it filters the HR table to include only rows where the Attrition column equals "Yes". 
- Result: A smaller virtual table containing only employees who have left the organization. 
+ Result: 
+A smaller virtual table containing only employees who have left the organization. 
 b. COUNTX(FILTER, 'HR'[EmployeeID]) 
  The COUNTX function iterates over a table (in this case, the filtered table created by FILTER) and counts the non-blank values in the specified column (EmployeeID). 
  Each employee has a unique EmployeeID. By counting these IDs in the filtered table, we get the total number of employees who have left. 
