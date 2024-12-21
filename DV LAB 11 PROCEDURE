@@ -7,7 +7,6 @@ v) Create a highlight table to show the Job Satisfaction Rating for each job rol
 vi) Create a horizontal bar chart to show the attrition count for each Education field Education field wise attrition-drag education field to rows, sum attrition count to column. 
 vii) Create multiple donut chart to show the Attrition Rate by Gender for different Age group
 
-
 Introduction 
 This program is designed to analyze and visualize an HR dataset. The primary objective is to extract meaningful insights about employees and their attributes such as attrition rates, demographics, 
 education fields, job satisfaction, and more.  
