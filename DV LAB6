@@ -66,8 +66,8 @@ make sure CustomerID is set as a whole number and Email as text.
 -How: Click the icon next to the column name and choose the appropriate data type. 
 14. Close & Apply: 
 -Once completed, click Close & Apply in the Home tab to load the transformed Customer Data into Power BI. 
- 
- 
+
+
 Connecting the data from the Excel Source, Clean, Transform the data. 
 Step 1:Import Data from Excel File 
 1. Get Data: Again, click on "Get Data" > "Excel." 
