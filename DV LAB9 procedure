@@ -28,7 +28,6 @@ Product Category: The type of product sold in each transaction, with categories 
 type. 
 Region: The broader region of India where each transaction took place, divided into categories such as North, South, East, West, Central, and North-East.
 
-
 (i)Create a choropleth map (fill the map) to spot the special trends to show the state revenue.
 Choropleth Map is used to visualize revenue distribution by state. A choropleth map 
 is a type of map where regions (in this case, Indian states) are shaded or colored in 
