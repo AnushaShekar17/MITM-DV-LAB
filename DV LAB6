@@ -8,7 +8,7 @@ Importing Data from a CSV File (Customer Data)
 
 Querying and Transforming CSV Data in Power Query Editor 
 In Power Query Editor, perform the following steps to clean and transform the Customer Data: 
-1. Rename Columns: 
+1.Rename Columns: 
 -Rename each column to be more descriptive if needed. Ensure 
 columns are labeled correctly, like CustomerID, CustomerName, 
 Place, and Email. 
