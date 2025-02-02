@@ -3,7 +3,7 @@ i) Visualize the countries data given in the dataset with respect to latitude an
 ii) Create a bar graph to compare GDP of Beigium between 2006-2026. 
 iii) Using pie chart, visualize the GDP of India, Nepal, Romania, South Asia, Singapore by the year 2010. 
 iv) Visualize the countries Bhutan & Costa Rica competing in terms of GDP. 
-v) Create a scatter plot or circle views of GDP of Mexico, Algeria, Fiji, Estonia from 2004 to 2006. 
+v)Create a scatter plot or circle views of GDP of Mexico, Algeria, Fiji, Estonia from 2004 to 2006. 
 
 Introduction 
 This program is designed to guide users in analyzing GDP data using Microsoft Power BI, a versatile business intelligence platform. It focuses on enabling users to explore and visualize GDP trends across 
