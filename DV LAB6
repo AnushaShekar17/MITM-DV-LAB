@@ -14,7 +14,7 @@ columns are labeled correctly, like CustomerID, CustomerName,
 Place, and Email. 
 Option 1: Right-click on the column header and select Rename. Then, type the new name 
 and press Enter. 
-Option 2: Double-click on the column header to edit it, type the new name, and press Enter. 
+Option 2: Double-click on the column header to edit it,type the new name, and press Enter. 
 2.Check for Null Values: 
 -Use the Remove Rows option to remove rows with null values if 
 necessary. 
