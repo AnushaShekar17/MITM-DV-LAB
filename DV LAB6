@@ -18,7 +18,7 @@ Option 2: Double-click on the column header to edit it,type the new name, and pr
 2.Check for Null Values: 
 -Use the Remove Rows option to remove rows with null values if 
 necessary. 
-3. Set Data Types: 
+3.Set Data Types: 
 - Ensure each column has the correct data type: 
 - CustomerID: Whole Number 
 - CustomerName: Text 
