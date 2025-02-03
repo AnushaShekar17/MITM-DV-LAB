@@ -11,7 +11,7 @@ In Power Query Editor, perform the following steps to clean and transform the Cu
 1.Rename Columns: 
 -Rename each column to be more descriptive if needed. Ensure 
 columns are labeled correctly, like CustomerID, CustomerName, 
-Place, and Email. 
+Place,and Email. 
 Option 1: Right-click on the column header and select Rename. Then, type the new name 
 and press Enter. 
 Option 2: Double-click on the column header to edit it,type the new name, and press Enter. 
