@@ -31,7 +31,7 @@ necessary.
 multiple columns. For instance, if the CustomerName column has first and last names 
 together (e.g., "Anil Kumar"), you can split it into FirstName and LastName. 
 -How: Right-click the CustomerName column > Split Column > choose By Delimiter and select a space as the delimiter. 
-6. Add Custom Columns 
+6.Add Custom Columns 
 -Ensure there are no duplicate entries in your dataset. For example, if two rows have the same CustomerID, you might want to keep only one. 
 -How: Select the CustomerID column > Home > Remove Duplicates. 
 -Create a new column with custom logic. For example, add a column to classify customers based on their location. 
