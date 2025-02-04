@@ -24,7 +24,7 @@ necessary.
 - CustomerName: Text 
 - Place: Text 
 - Email: Text 
-4. Apply Filters: 
+4.Apply Filters: 
 - If required, filter data by specific criteria, such as customers from Mysore. 
 5. Split Columns 
 -If you have a combined field like a full name or an address, you can split it into 
