@@ -36,7 +36,7 @@ together (e.g., "Anil Kumar"), you can split it into FirstName and LastName.
 -How: Select the CustomerID column > Home > Remove Duplicates. 
 -Create a new column with custom logic. For example, add a column to classify customers based on their location. 
 -How: Go to Add Column > Custom Column. You can add logic like if [Place] = "Mysore" then "Local" else "Non-Local" to create a column that labels customers based on location. 
-7. Extract Domain from Email 
+7.Extract Domain from Email 
 - Extract the domain part of the email (e.g., gmail.com from anil@gmail.com). This is useful if you want to analyze customers based on their email domains. 
 - How: Select the Email column > Add Column > Extract > Text After Delimiter, 
 and set "@" as the delimiter. 
