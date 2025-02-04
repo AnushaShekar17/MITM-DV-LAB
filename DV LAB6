@@ -40,7 +40,7 @@ together (e.g., "Anil Kumar"), you can split it into FirstName and LastName.
 - Extract the domain part of the email (e.g., gmail.com from anil@gmail.com). This is useful if you want to analyze customers based on their email domains. 
 - How: Select the Email column > Add Column > Extract > Text After Delimiter, 
 and set "@" as the delimiter. 
-8. Remove Duplicate Records 
+8.Remove Duplicate Records 
 9. Group By 
 -Group data based on a specific column, such as Place, to summarize data. For 
 example, count the number of customers in each city. 
