@@ -51,7 +51,7 @@ add an aggregation like Count of Rows.
 create a column to count the characters in CustomerName for analysis purposes. 
 -How: Go to Add Column > Custom Column and add a formula like 
 Text.Length([CustomerName]). 
-11. Format Column Values 
+11.Format Column Values 
 -Standardize text or values by changing the case of text columns (like making all place 
 names lowercase or uppercase). 
 -How: Select the Place column > Transform > Format > Uppercase or Lowercase. 
