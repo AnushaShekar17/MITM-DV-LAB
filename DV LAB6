@@ -46,7 +46,7 @@ and set "@" as the delimiter.
 example, count the number of customers in each city. 
 -How: Select the Place column > Home > Group By. Set it to group by Place and 
 add an aggregation like Count of Rows. 
-10. Create Calculated Columns 
+10.Create Calculated Columns 
 -You can add calculated columns based on the existing ones. For example, you could 
 create a column to count the characters in CustomerName for analysis purposes. 
 -How: Go to Add Column > Custom Column and add a formula like 
