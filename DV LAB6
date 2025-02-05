@@ -55,7 +55,7 @@ Text.Length([CustomerName]).
 -Standardize text or values by changing the case of text columns (like making all place 
 names lowercase or uppercase). 
 -How: Select the Place column > Transform > Format > Uppercase or Lowercase. 
-12. Fill Missing Data 
+12.Fill Missing Data 
 -If there are null or blank values in your dataset, you can fill these with a default value. 
 For example, fill missing entries in the Place column with "Unknown". 
 -How: Select the column with missing values > Transform > Replace Values or Fill 
