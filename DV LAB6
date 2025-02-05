@@ -41,7 +41,7 @@ together (e.g., "Anil Kumar"), you can split it into FirstName and LastName.
 - How: Select the Email column > Add Column > Extract > Text After Delimiter, 
 and set "@" as the delimiter. 
 8.Remove Duplicate Records 
-9. Group By 
+9.Group By 
 -Group data based on a specific column, such as Place, to summarize data. For 
 example, count the number of customers in each city. 
 -How: Select the Place column > Home > Group By. Set it to group by Place and 
