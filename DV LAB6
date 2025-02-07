@@ -141,7 +141,7 @@ A, Product B, Product C).
 3. Set conditions: 
 -If Quantity is greater than or equal to 8, then "High Quantity." 
 -Otherwise, "Low Quantity." 
-4. Click "OK." 
+4. Click "OK" 
 This categorization provides an easy way to identify bulk orders vs. smaller ones.
 
 
