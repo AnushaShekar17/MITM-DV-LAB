@@ -93,7 +93,7 @@ Enter a name (e.g., TotalSales) and use the formula:
 -Go to "Home" > "Merge Queries." 
 -Select sales_data as the first table and customer_data as the second table. 
 -Choose the matching column (e.g., CustomerID from customer_data and create a relation based on order data). 
--Click "OK." 
+-Click"OK." 
 5. Filter Orders by Date Range 
 -Purpose: Show only orders from the range "01-01-2023" to "15-01-2023. 
 -Steps: 
