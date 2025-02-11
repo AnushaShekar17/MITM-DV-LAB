@@ -5,7 +5,6 @@ Importing Data from a CSV File (Customer Data)
 2.Locate the Customer Data CSV file and click Open. 
 3.A preview of the data will appear in the CSV import dialog. 
 4.Click Load Data or Transform Data to open the data in Power Query Editor for querying and transformation. 
-
 Querying and Transforming CSV Data in Power Query Editor 
 In Power Query Editor, perform the following steps to clean and transform the Customer Data: 
 1.Rename Columns: 
